@@ -1,7 +1,9 @@
 #include<iostream>
 #include<windows.h>
 #include<string.h>
+
 using namespace std;
+
 class animal
 {
     private:
@@ -23,23 +25,28 @@ class animal
             std::cout << ages << std::endl;
         }
 };
+
 class student
 {
     private:
+
         string name;
         int ages;
         string grade;
     public:
+    
         student()
         {
             std::cout << "无参构造函数" << std::endl;
         }
+
         student(string newName,int newAges,string newGrade)
         {
             name = newName;
             ages = newAges;
             grade = newGrade;
         }
+
         void show()
         {
             std::cout << "name:" << name << std::endl;
@@ -47,6 +54,7 @@ class student
             std::cout << "grade:" << grade << std::endl;
         }
 };
+
 int main()
 {
     animal a1("狗",12);
